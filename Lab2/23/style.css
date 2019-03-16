@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+.button {
+    display: relative;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    background: blue;
+    -webkit-transition: transform 5s ease-out;
+    transition: transform 5s ease-out;
+}
+
+.button:hover {
+    -webkit-transform: translate(calc(100vw - 300px), calc(100vh - 300px));
+    -moz-transform: translate(calc(100vw - 300px), calc(100vh - 300px));
+    -o-transform: translate(calc(100vw - 300px), calc(100vh - 300px));
+    -ms-transform: translate(calc(100vw - 300px), calc(100vh - 300px));
+    transform: translate(calc(100vw - 300px), calc(100vh - 300px));
+    -webkit-animation: color_change 10s;
+    -moz-animation: color_change 10s;
+    -ms-animation: color_change 10s;
+    -o-animation: color_change 10s;
+    animation: color_change 10s;
+}
+
+@-webkit-keyframes color_change {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+@-moz-keyframes color_change {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+@-ms-keyframes color_change {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+@-o-keyframes color_change {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
+@keyframes color_change {
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: red;
+    }
+}
