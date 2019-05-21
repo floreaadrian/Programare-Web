@@ -1,0 +1,21 @@
+div {
+    display: inline-block;
+}
+#f1,
+#f2,
+#f3,
+#f4,
+#f5,
+#f6,
+#f7,
+#f8,
+#f9 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+#f1 {
+    top: 50px;
+    left: 50px;
+}

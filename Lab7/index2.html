@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Hatz</title>
+        <style>
+            table {
+                border: 1px solid #666;
+                width: 100%;
+            }
+            th {
+                background: #f8f8f8;
+                font-weight: bold;
+                padding: 2px;
+            }
+            td {
+                max-width: 250px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id="hatz">get hatz</button>
+        <h3>Add report</h3>
+        <form
+            id="submitDataForm"
+            method="POST"
+            action="http://localhost:8080/server_reports/api/post/create.php"
+        >
+            Type:
+            <input type="text" name="type" />Severity:
+            <!-- 
+            <input type="text" name="severityReport1" id="severityReport" /> -->
+            <select id="severityReport" name="severity" form="submitDataForm">
+                <option value="Debug">Debug</option>
+                <option value="Warning">Warning</option>
+                <option value="Notice">Notice</option>
+                <option value="Error">Error</option>
+                <option value="Critical">Critical</option>
+            </select>
+            User: <input type="text" name="user" />Data:
+            <input type="date" name="timp" />
+            Log<input type="text" name="log" />
+            <input type="submit" value="Send" />
+        </form>
+        <br />
+        <div>
+            <div class="nav-btn-container">
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+            <table id="personDataTable">
+                <tr>
+                    <th>Id</th>
+                    <th>Type</th>
+                    <th>Severity</th>
+                    <th>Date</th>
+                    <th>User</th>
+                    <th>Log</th>
+                </tr>
+            </table>
+        </div>
+        <br />
+        <h3>Delete</h3>
+        <form
+            id="deleteForm"
+            method="DELETE"
+            action="http://localhost:8080/server_reports/api/post/delete.php"
+        >
+            Id:
+            <input type="text" name="type" />
+            <input type="submit" value="Delete" />
+        </form>
+        <br />
+        <h3>Filter by severity</h3>
+        <form
+            id="getBySeverity"
+            method="GET"
+            action="http://localhost:8080/server_reports/api/post/get_by_severity.php"
+        >
+            Severity:
+            <select name="severity">
+                <option value="Debug">Debug</option>
+                <option value="Warning">Warning</option>
+                <option value="Notice">Notice</option>
+                <option value="Error">Error</option>
+                <option value="Critical">Critical</option>
+            </select>
+            <input type="submit" value="Send" />
+        </form>
+        <div>
+            <div class="nav-btn-container">
+                <button class="prev-btn">Prev</button>
+                <button class="next-btn">Next</button>
+            </div>
+            <table id="by_severity">
+                <tr>
+                    <th>Id</th>
+                    <th>Type</th>
+                    <th>Severity</th>
+                    <th>Date</th>
+                    <th>User</th>
+                    <th>Log</th>
+                </tr>
+            </table>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

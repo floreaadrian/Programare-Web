@@ -1,0 +1,11 @@
+td {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 1px;
+}
+#mytab1 {
+}

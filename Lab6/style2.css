@@ -1,0 +1,23 @@
+img {
+    width: 25%;
+}
+
+a {
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 20px;
+    color: rgb(85, 88, 171);
+}
+
+a:hover {
+    color: #c042ff;
+}
+
+#container {
+    white-space: nowrap;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
