@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneteAsp", "PlaneteAsp\PlaneteAsp.csproj", "{F26A1AE1-D7D9-40FB-8B4F-D95622946CD4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlaneteAsp.Tests", "PlaneteAsp.Tests\PlaneteAsp.Tests.csproj", "{08AABB79-0CED-4457-AF61-602C708EDB95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F26A1AE1-D7D9-40FB-8B4F-D95622946CD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F26A1AE1-D7D9-40FB-8B4F-D95622946CD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F26A1AE1-D7D9-40FB-8B4F-D95622946CD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F26A1AE1-D7D9-40FB-8B4F-D95622946CD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AABB79-0CED-4457-AF61-602C708EDB95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AABB79-0CED-4457-AF61-602C708EDB95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AABB79-0CED-4457-AF61-602C708EDB95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AABB79-0CED-4457-AF61-602C708EDB95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

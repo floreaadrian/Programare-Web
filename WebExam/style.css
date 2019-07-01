@@ -1,0 +1,18 @@
+div {
+    width: 400px;
+    height: 500px;
+    background-color: blue;
+    animation: square-to-circle 2s 1s infinite alternate;
+    position: absolute;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0 0 0 0;
+    }
+
+    100% {
+        width: 400px;
+        border-radius: 100%;
+    }
+}

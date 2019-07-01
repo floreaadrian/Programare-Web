@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div>
+            <p>ceav</p>
+            <p>cevace</p>
+        </div>
+        <p>altceva</p>
+        <h1>nush</h1>
+        <span
+            ><h2>fadsfa</h2>
+            <h3>fdasfda</h3></span
+        >
+        <script>
+            let body = $("body");
+            let listToWrite = [];
+            body.children().each(function() {
+                listToWrite.push($(this)); // "this" is the current element in the loop
+            });
+            for (let i = 0; i < (listToWrite.length - 1) / 2; ++i) {
+                let altu = listToWrite[i];
+                listToWrite[i] = listToWrite[listToWrite.length - 1 - i];
+                listToWrite[listToWrite.length - 1 - i] = altu;
+            }
+            $("body").empty();
+            listToWrite.forEach(e => {
+                $("body").append(e.html());
+            });
+        </script>
+    </body>
+</html>
